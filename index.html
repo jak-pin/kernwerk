@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna SMF Kernwerk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="#"><img src="kernwerk - logo.jpg" alt="Logo SMF Kernwerk"></a>
+            </div>
+            <div id="tabs">
+                <a href="./about-us/" class="nav-link">O nas</a>
+                <a href="./offer/" class="nav-link">Oferta</a>
+                <a href="./gallery/" class="nav-link">Galeria zdjęć</a>
+                <div class="collapsible" id="collapsible">
+                    <a href="./projects/" class="nav-link">Nasze projekty</a>
+                    <span>+</span>
+                    <div class="collapsible-content" id="collapsible-box" style="display: none;">
+                        <a href="./projects/cmentarz.html" class="collapsible-link">Cmentarz garnizonowy</a>
+                        <a href="./projects/droga.html" class="collapsible-link">Droga rokadowa</a>
+                        <a href="./projects/fortVa.html" class="collapsible-link">Fort Va</a>
+                        <a href="./projects/obornicka.html" class="collapsible-link">Schron 1</a>
+                        <a href="./projects/pilicka.html" class="collapsible-link">Schron 2</a>
+                    </div>
+                </div>
+                <a href="./sponsors/" class="nav-link">Nasi sponsorzy</a>
+                <a href="./contact/" class="nav-link">Kontakt</a>
+            </div>
+        </nav>
+        
+    </header>
+    
+    <section id="main">
+        
+        <h1>Stowarzyszenie Miłośników Fortyfikacji “Kernwerk”</h1>
+        
+        <div class="content-container">
+            <div class="container-text">
+                <h2>Kim jesteśmy?</h2>
+                Jesteśmy Stowarzyszeniem skupiającym ludzi młodych, grono z naszych członków to uczniowie oraz studenci, 
+            którym nieobcy jest dalszy los fortyfikacji poznańskich.
+            </div>
+            <div class="container-photo">
+                <img src="kernwerk - logo.jpg" alt="Logo SMF Kernwerk">
+            </div>
+        </div>
+        
+        <div class="content-container">
+            <div class="container-photo">
+                <img src="./photos/fortVa_dziedziniec_2.jpg" alt="dziedziniec">
+            </div>
+            <div class="container-text">
+                <h2>Gdzie jesteśmy jesteśmy?</h2>
+                Jesteśmy Stowarzyszeniem skupiającym ludzi młodych, grono z naszych członków to uczniowie oraz studenci, 
+            którym nieobcy jest dalszy los fortyfikacji poznańskich.
+            </div>   
+        </div>
+        
+        <div class="content-container">
+            <div class="container-text">
+                <h2>Jak wyglądamy?</h2>
+                Jesteśmy Stowarzyszeniem skupiającym ludzi młodych, grono z naszych członków to uczniowie oraz studenci, 
+            którym nieobcy jest dalszy los fortyfikacji poznańskich.
+            </div>
+            <div class="container-photo">
+                <img src="./photos/fortVa_działko.jpg" alt="Logo SMF Kernwerk">
+            </div>
+        </div>
+    
+
+    </section>
+    <footer>
+        <a href="https://m.facebook.com/FortVaPoznan/"><img src="facebook.png" alt="Facebook Icon by Freepik"></a>
+        <a href="https://www.instagram.com/fort_va_poznan/"><img src="instagram.png" alt="Instagram Icon by Pixel perfect"></a>
+        
+    </footer>
+    <script>
+        const coll = document.getElementById("collapsible");
+        coll.addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-box") ;
+            if (content.style.display === "none") {
+                content.style.display = "inline-block";
+            } 
+            else {
+
+                content.style.display = "none";
+            }
+        })
+
+        // const collBox = document.getElementById("collapsible-box");
+        // collBox.addEventListener("mouseover", function(){
+        //     if(collBox.style.display === "inline-block"){
+        //         collBox.style.display = "inline-block";
+        //     } 
+        //     else {
+
+        //         collBox.style.display = "none";
+        //     }
+        // })
+
+
+    </script>
+</body>
+</html>

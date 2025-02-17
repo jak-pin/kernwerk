@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schron Obornicka</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="../index.html"><img src="../kernwerk - logo.jpg" alt="Logo SMF Kernwerk"></a>
+            </div>
+            <div id="tabs">
+                <a href="../about-us/" class="nav-link">O nas</a>
+                <a href="../offer/" class="nav-link">Oferta</a>
+                <a href="../gallery/" class="nav-link">Galeria zdjęć</a>
+                <div class="collapsible" id="collapsible">
+                    <a href="../projects/" class="nav-link">Nasze projekty</a>
+                    <span>+</span>
+                    <div class="collapsible-content" id="collapsible-box" style="display: none;">
+                        <a href="../projects/cmentarz.html" class="collapsible-link">Cmentarz garnizonowy</a>
+                        <a href="../projects/droga.html" class="collapsible-link">Droga rokadowa</a>
+                        <a href="../projects/fortVa.html" class="collapsible-link">Fort Va</a>
+                        <a href="../projects/obornicka.html" class="collapsible-link">Schron 1</a>
+                        <a href="../projects/pilicka.html" class="collapsible-link">Schron 2</a>
+                    </div>
+                </div>
+                <a href="../sponsors/" class="nav-link">Nasi sponsorzy</a>
+                <a href="../contact/" class="nav-link">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+    <section id="main">
+        <h1>Schron Obornicka</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed hendrerit eros. Vivamus quis felis placerat, dapibus tellus eget, posuere lorem. 
+            Sed eu diam et metus bibendum vestibulum pulvinar ac est. In blandit maximus imperdiet. Nulla posuere arcu ligula, eget ultricies tellus fermentum id. 
+            Aliquam id lectus vitae magna pellentesque consequat vitae quis metus. Vestibulum mauris nisi, pulvinar ac hendrerit eu, mollis et lectus. 
+            Aenean accumsan eros vitae lorem molestie ullamcorper. Etiam massa massa, fringilla sit amet nibh ac, egestas rhoncus risus. 
+            Curabitur et tincidunt purus, eget aliquam diam. Quisque et lacinia magna, sit amet tincidunt mi. Maecenas tortor eros, consequat accumsan augue scelerisque, 
+            mattis posuere massa.
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1215.9570174159358!2d16.908282000000003!3d52.444472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470443818319f49b%3A0x9ca7163dc19883b4!2sPruski%20Schron%20Piechoty%20J%20Va!5e0!3m2!1spl!2spl!4v1739188915299!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <a href="https://m.facebook.com/FortVaPoznan/"><img src="../facebook.png" alt="Facebook Icon by Freepik"></a>
+        <a href="https://www.instagram.com/fort_va_poznan/"><img src="../instagram.png" alt="Instagram Icon by Pixel perfect"></a>
+        
+    </footer>
+    <script>
+        const coll = document.getElementById("collapsible");
+        coll.addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-box") ;
+            if (content.style.display === "none") {
+                content.style.display = "inline-block";
+            } 
+            else {
+
+                content.style.display = "none";
+            }
+        })
+    </script>
+</body>
+</html>

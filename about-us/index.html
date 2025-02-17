@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="../index.html"><img src="../kernwerk - logo.jpg" alt="Logo SMF Kernwerk"></a>
+            </div>
+            <div id="tabs">
+                <a href="#" class="nav-link">O nas</a>
+                <a href="../offer/" class="nav-link">Oferta</a>
+                <a href="../gallery/" class="nav-link">Galeria zdjęć</a>
+                <div class="collapsible" id="collapsible">
+                    <a href="../projects/" class="nav-link">Nasze projekty</a>
+                    <span>+</span>
+                    <div class="collapsible-content" id="collapsible-box" style="display: none;">
+                        <a href="../projects/cmentarz.html" class="collapsible-link">Cmentarz garnizonowy</a>
+                        <a href="../projects/droga.html" class="collapsible-link">Droga rokadowa</a>
+                        <a href="../projects/fortVa.html" class="collapsible-link">Fort Va</a>
+                        <a href="../projects/obornicka.html" class="collapsible-link">Schron 1</a>
+                        <a href="../projects/pilicka.html" class="collapsible-link">Schron 2</a>
+                    </div>
+                </div>
+                <a href="../sponsors/" class="nav-link">Nasi sponsorzy</a>
+                <a href="../contact/" class="nav-link">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+    <section id="main">
+        <h1>O nas</h1>
+        <div class="content-container">
+            <div class="container-photo">
+                <img src="../photos/fortVa_kłos.jpg" alt="Kłos">
+            </div>
+            <div class="container-text">
+                <p>
+                    Jesteśmy Stowarzyszeniem skupiającym ludzi młodych, grono z naszych członków to uczniowie oraz studenci, którym nieobcy jest dalszy los fortyfikacji poznańskich. 
+                    Zdając sobie sprawę z postępującej dewastacji tych historycznych obiektów, które w tak bardzo znaczący sposób wpływały na historię naszego miasta oraz nas samych, 
+                    postanowiliśmy zacząć aktywnie przeciwdziałać tej smutnej tendencji. Od kwietnia 2007, wpierw jako nieformalna grupa, a obecnie jako Stowarzyszenie, 
+                    kontynuujemy prace rewitalizacyjne na terenie Fortu Va, wierząc, że utworzenie na jego terenie trasy turystycznej zarówno spotka się z pozytywnym odzewem 
+                    oraz zainteresowaniem, jak też i uchroni ten zabytek od zagłady.
+                </p>
+                
+                <p>
+                    Od momentu zainicjowania istnienia naszego środowiska, nasi członkowie brali również udział w pracach rewitalizacyjnych na terenie <b>Rawelinu III</b> wchodzącego w skład 
+                    historycznego <b>Fortu Winiary</b>, <b>Furty Grobelnej</b> oraz na <b>terenie Fortu III</b>. 
+                    Obecnie nasze Stowarzyszenie aktywnie działa na <b><a href="../projects/fortVa.html">Forcie Va Bonin</a></b>, <b>schronach</b> (<a href="../projects/obornicka.html">schron 1</a>, <a href="../projects/pilicka.html">schron 2</a>). Obiekty, które znajdują się pod naszą kuratelą przeszły szereg prac 
+                    poprawiający stan jej zachowania. 
+                </p>
+                <p>
+                    Całość naszej działalności opieramy na zasadach wolontariatu, nie czerpiemy zysków z naszej pracy, wszystkie pieniądze zawsze ‘idą’ na dalsze finansowanie renowacji obieków, 
+                    które są pod naszą opieką.
+                </p>
+                <p>
+                    Jeśli miałbyś możliwość wsparcia naszej inicjatywy i przyczynienia się do postępu prac na terenie Fortu Va, prosimy Cię bardzo o <b><a href="../contact/">kontakt</a></b>.
+                </p>
+                
+    
+                
+    
+            </div>
+            
+        </div>
+        
+    </section>
+    <footer>
+        <a href="https://m.facebook.com/FortVaPoznan/"><img src="../facebook.png" alt="Facebook Icon by Freepik"></a>
+        <a href="https://www.instagram.com/fort_va_poznan/"><img src="../instagram.png" alt="Instagram Icon by Pixel perfect"></a>
+        
+    </footer>
+    <script>
+        const coll = document.getElementById("collapsible");
+        coll.addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-box") ;
+            if (content.style.display === "none") {
+                content.style.display = "inline-block";
+            } 
+            else {
+
+                content.style.display = "none";
+            }
+        })
+
+        // const collBox = document.getElementById("collapsible-box");
+        // collBox.addEventListener("mouseover", function(){
+        //     if(collBox.style.display === "inline-block"){
+        //         collBox.style.display = "inline-block";
+        //     } 
+        //     else {
+
+        //         collBox.style.display = "none";
+        //     }
+        // })
+
+
+    </script>
+</body>
+</html>

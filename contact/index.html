@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="../index.html"><img src="../kernwerk - logo.jpg" alt="Logo SMF Kernwerk"></a>
+            </div>
+            <div id="tabs">
+                <a href="../about-us/" class="nav-link">O nas</a>
+                <a href="../offer/" class="nav-link">Oferta</a>
+                <a href="../gallery/" class="nav-link">Galeria zdjęć</a>
+                <div class="collapsible" id="collapsible">
+                    <a href="../projects/" class="nav-link">Nasze projekty</a>
+                    <span>+</span>
+                    <div class="collapsible-content" id="collapsible-box" style="display: none;">
+                        <a href="../projects/cmentarz.html" class="collapsible-link">Cmentarz garnizonowy</a>
+                        <a href="../projects/droga.html" class="collapsible-link">Droga rokadowa</a>
+                        <a href="../projects/fortVa.html" class="collapsible-link">Fort Va</a>
+                        <a href="../projects/obornicka.html" class="collapsible-link">Schron 1</a>
+                        <a href="../projects/pilicka.html" class="collapsible-link">Schron 2</a>
+                    </div>
+                </div>
+                <a href="../sponsors/" class="nav-link">Nasi sponsorzy</a>
+                <a href="#" class="nav-link">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+    <section id="main">
+        <h1>Dane kontaktowe</h1>
+        <div class="content-box">
+            <p><b>Adres</b> Fort Va, ul. Szanieckiego, 60-681 Poznań
+            (naprzeciwko Poznań Plazy względem ul. Lechickiej)</p>
+
+            <p><b>Adres korespondencyjny:</b>
+            os Stefana Batorego 17/15, 60-687 Poznań</p>
+
+            <p><b>KRS:</b> 00003848060</p> 
+            
+            <p><b>REGON:</b> 301738431</p>
+
+            <p><b>Adres e-mail: </b>kontakt@kernwerk.pl</p>
+        </div>
+        <div class="content-box">
+            <h2>Współpracuj z nami!</h2>
+            <p>Jeśli chciałbyś do nas dołączyć, lub nawiązać z nami inny rodzaj współpracy, pisz do nas na nasz adres email lub na Facebook i Instagram.</p>
+        </div>
+        <div class="content-box">
+            <!-- Mapa -->
+             <h2>Najczęściej znajdziesz nas na:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4863.787991156954!2d16.916472!3d52.444835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704434f8d1feffb%3A0x84b1fb5e4ee9533a!2sFort%20Va%20%22Bonin%22!5e0!3m2!1spl!2spl!4v1739184906847!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </section>
+    <footer>
+        <a href="https://m.facebook.com/FortVaPoznan/"><img src="../facebook.png" alt="Facebook Icon by Freepik"></a>
+        <a href="https://www.instagram.com/fort_va_poznan/"><img src="../instagram.png" alt="Instagram Icon by Pixel perfect"></a>
+        
+    </footer>
+    <script>
+        const coll = document.getElementById("collapsible");
+        coll.addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-box") ;
+            if (content.style.display === "none") {
+                content.style.display = "inline-block";
+            } 
+            else {
+
+                content.style.display = "none";
+            }
+        })
+    </script>
+</body>
+</html>

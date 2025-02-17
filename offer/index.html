@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktualna oferta</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="../index.html"><img src="../kernwerk - logo.jpg" alt="Logo SMF Kernwerk"></a>
+            </div>
+            <div id="tabs">
+                <a href="../about-us/" class="nav-link">O nas</a>
+                <a href="#" class="nav-link">Oferta</a>
+                <a href="../gallery/" class="nav-link">Galeria zdjęć</a>
+                <div class="collapsible" id="collapsible">
+                    <a href="../projects/" class="nav-link">Nasze projekty</a>
+                    <span>+</span>
+                    <div class="collapsible-content" id="collapsible-box" style="display: none;">
+                        <a href="../projects/cmentarz.html" class="collapsible-link">Cmentarz garnizonowy</a>
+                        <a href="../projects/droga.html" class="collapsible-link">Droga rokadowa</a>
+                        <a href="../projects/fortVa.html" class="collapsible-link">Fort Va</a>
+                        <a href="../projects/obornicka.html" class="collapsible-link">Schron 1</a>
+                        <a href="../projects/pilicka.html" class="collapsible-link">Schron 2</a>
+                    </div>
+                </div>
+                <a href="../sponsors/" class="nav-link">Nasi sponsorzy</a>
+                <a href="../contact/" class="nav-link">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+    <section id="main">
+        <h1>Oferta</h1>
+        <div class="content-container">
+            <div class="container-text">
+                <h2>Zwiedzanie fortu Va Bonin</h2>
+                Zwiedzanie odbywa się wyłącznie z przewodnikiem ubranym w mundur historyczny, w każdą ostatnią sobotę miesiąca.
+
+                Godziny wejść: <b>12:00</b> i <b>15:00</b>.
+                Czas zwiedzania wynosi około jednej godziny.
+
+                Ceny biletów: <b>15 zł</b> – normalny, <b>10 zł</b> – ulgowy.
+                Specjalne zniżki dla stałych klientów, biur turystycznych oraz grup zorganizowanych.
+
+                Po uprzednim kontakcie telefonicznym (<b>506 737 222</b>), bądź mailowym <b>kontakt@kernwerk.pl</b>
+                Dla grup zorganizowanych (minimum 15 osób) możliwe inne dni zwiedzania. Możliwe zwiedzanie w nocy.
+            </div>
+            <div class="container-photo">
+                <img src="../photos/fortVa_oprowadzanie.jpg" alt="oprowadzanie">
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="container-photo">
+                <img src="../photos/fortVa_dziedziniec_2.jpg" alt="dziedziniec">
+            </div>
+            <div class="container-text">
+                <h2>Wynajem sali pod eventy</h2>
+                Wynajmujemy salę pod organizację uroczystości, eventów i wydarzeń.
+            </div>   
+        </div>
+        <div class="content-container">
+            <div class="container-text">
+                <h2>Wynajem miejsca ogniskowego</h2>
+                Posiadamy szeroki wybór miejsc ogniskowych idealnych do urozmaicenia Twojej imprezy.
+            </div>
+            <div class="container-photo">
+                <img src="../photos/fortVa_działko.jpg" alt="Logo SMF Kernwerk">
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="container-photo">
+                <img src="../photos/fortVa_dziedziniec_2.jpg" alt="dziedziniec">
+            </div>
+            <div class="container-text">
+                <h2>Organizacja eventów</h2>
+                Organizujemy imprezy intergracyjne i firmowe. Poza tym istnieje możliwość organizacji biegów nocnych czy zadać team buildingowych.
+            </div>   
+        </div>
+        <div class="content-container">
+            <div class="container-text">
+                <h2>Paintball laserowy</h2>
+                Firma LasertTag na Forcie Va Bonin zapewnia możliwość gry.
+            </div>
+            <div class="container-photo">
+                <img src="../photos/fortVa_działko.jpg" alt="Logo SMF Kernwerk">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="https://m.facebook.com/FortVaPoznan/"><img src="../facebook.png" alt="Facebook Icon by Freepik"></a>
+        <a href="https://www.instagram.com/fort_va_poznan/"><img src="../instagram.png" alt="Instagram Icon by Pixel perfect"></a>
+        
+    </footer>
+    <script>
+        const coll = document.getElementById("collapsible");
+        coll.addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-box") ;
+            if (content.style.display === "none") {
+                content.style.display = "inline-block";
+            } 
+            else {
+
+                content.style.display = "none";
+            }
+        })
+    </script>
+
+</body>
+</html>

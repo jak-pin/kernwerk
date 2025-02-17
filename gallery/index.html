@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria zdjęć</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="../index.html"><img src="../kernwerk - logo.jpg" alt="Logo SMF Kernwerk"></a>
+            </div>
+            <div id="tabs">
+                <a href="../about-us/" class="nav-link">O nas</a>
+                <a href="../offer/" class="nav-link">Oferta</a>
+                <a href="#" class="nav-link">Galeria zdjęć</a>
+                <div class="collapsible" id="collapsible">
+                    <a href="../projects/" class="nav-link">Nasze projekty</a>
+                    <span>+</span>
+                    <div class="collapsible-content" id="collapsible-box" style="display: none;">
+                        <a href="../projects/cmentarz.html" class="collapsible-link">Cmentarz garnizonowy</a>
+                        <a href="../projects/droga.html" class="collapsible-link">Droga rokadowa</a>
+                        <a href="../projects/fortVa.html" class="collapsible-link">Fort Va</a>
+                        <a href="../projects/obornicka.html" class="collapsible-link">Schron 1</a>
+                        <a href="../projects/pilicka.html" class="collapsible-link">Schron 2</a>
+                    </div>
+                </div>
+                <a href="../sponsors/" class="nav-link">Nasi sponsorzy</a>
+                <a href="../contact/" class="nav-link">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+    <section id="main">
+        <h1>Galeria</h1>
+        <div id="gallery-box">
+            <img src="../photos/fort_Va_poterna.jpg" alt="poterna">
+            <img src="../photos/fortVa_Artur.jpg" alt="poterna">
+            <img src="../photos/fortVa_brama.jpg" alt="poterna">
+            <img src="../photos/fortVa_działko.jpg" alt="poterna">
+            <img src="../photos/fortVa_dziedziniec_2.jpg" alt="poterna">
+            <img src="../photos/fortVa_kłos.jpg" alt="poterna">
+            <img src="../photos/fortVa_most.jpg" alt="poterna">
+            <img src="../photos/fortVa_oprowadzanie.jpg" alt="poterna">
+        </div>
+    </section>
+    <footer>
+        <a href="https://m.facebook.com/FortVaPoznan/"><img src="../facebook.png" alt="Facebook Icon by Freepik"></a>
+        <a href="https://www.instagram.com/fort_va_poznan/"><img src="../instagram.png" alt="Instagram Icon by Pixel perfect"></a>
+        
+    </footer>
+    <script>
+        const coll = document.getElementById("collapsible");
+        coll.addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-box") ;
+            if (content.style.display === "none") {
+                content.style.display = "inline-block";
+            } 
+            else {
+
+                content.style.display = "none";
+            }
+        })
+    </script>
+</body>
+</html>

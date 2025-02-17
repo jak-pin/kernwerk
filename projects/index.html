@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasze projekty</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="../index.html"><img src="../kernwerk - logo.jpg" alt="Logo SMF Kernwerk"></a>
+            </div>
+            <div id="tabs">
+                <a href="../about-us/" class="nav-link">O nas</a>
+                <a href="../offer/" class="nav-link">Oferta</a>
+                <a href="../gallery/" class="nav-link">Galeria zdjęć</a>
+                <div class="collapsible" id="collapsible">
+                    <a href="../projects/" class="nav-link">Nasze projekty</a>
+                    <span>+</span>
+                    <div class="collapsible-content" id="collapsible-box" style="display: none;">
+                        <a href="../projects/cmentarz.html" class="collapsible-link">Cmentarz garnizonowy</a>
+                        <a href="../projects/droga.html" class="collapsible-link">Droga rokadowa</a>
+                        <a href="../projects/fortVa.html" class="collapsible-link">Fort Va</a>
+                        <a href="../projects/obornicka.html" class="collapsible-link">Schron 1</a>
+                        <a href="../projects/pilicka.html" class="collapsible-link">Schron 2</a>
+                    </div>
+                </div>
+                
+                <a href="../sponsors/" class="nav-link">Nasi sponsorzy</a>
+                <a href="../contact/" class="nav-link">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+    <section id="main">
+        <h1>Nasze projekty</h1>
+        <h2>Stowarzyszenie Miłośników Fortyfikacji "Kernwerk" zajmuje się kilkoma obiektami na terenie Poznania. </h2>
+        <a href="../projects/fortVa.html">
+            <div class="content-container">
+                <div class="container-text">
+                    <h2>Fort Va Bonin</h2>
+                    Zbudowany w latach 1887-1890 fort pośredni. Znajduje się przy ulicy Lechickiej. 
+                </div>
+                <div class="container-photo">
+                    <img src="../photos/fortVa_brama.jpg" alt="Kłos">
+                </div>
+            </div>
+        </a>
+        <a href="../projects/obornicka.html">
+            <div class="content-container">
+                <div class="container-photo">
+                    <img src="../photos/fortVa_brama.jpg" alt="Kłos">
+                </div>
+                <div class="container-text">
+                    <h2>Schron Obornicka</h2>
+                    Zbudowany w latach 1887-1890 schron piechoty. Znajduje się przy ulicy Obornickiej. 
+                </div>
+            </div>
+        </a>
+        <a href="../projects/pilicka.html">
+            <div class="content-container">
+                <div class="container-text">
+                    <h2>Schron Pilicka</h2>
+                    Zbudowany w latach 1887-1890 schron piechoty. Obecnie stoi na nim dom jednorodzinny. Znajduje się przy ulicy Pilickiej. 
+                </div>
+                <div class="container-photo">
+                    <img src="../photos/fortVa_brama.jpg" alt="Kłos">
+                </div>
+            </div>
+        </a>
+        <a href="../projects/droga.html">
+            <div class="content-container">
+                
+                <div class="container-photo">
+                    <img src="../photos/fortVa_brama.jpg" alt="Kłos">
+                </div>
+                <div class="container-text">
+                    <h2>Droga Rokadowa</h2>
+                    Zbudowana w latach 1887-1890. Znajduje się przy Forcie Va Bonin. 
+                </div>
+            </div>
+        </a>
+        <a href="../projects/cmentarz.html">
+        <div class="content-container">
+            <div class="container-text">
+                <h2>Cmentarz Garnizonowy</h2>
+                Zbudowany ?. Znajduje się na terenie poznańskiej Cytadeli. 
+            </div>
+            <div class="container-photo">
+                <img src="../photos/fortVa_brama.jpg" alt="Kłos">
+            </div>
+        </div>
+        </a>
+    </section>
+    <footer>
+        <a href="https://m.facebook.com/FortVaPoznan/"><img src="../facebook.png" alt="Facebook Icon by Freepik"></a>
+        <a href="https://www.instagram.com/fort_va_poznan/"><img src="../instagram.png" alt="Instagram Icon by Pixel perfect"></a>
+        
+    </footer>
+    <script>
+        const coll = document.getElementById("collapsible");
+        coll.addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = document.getElementById("collapsible-box") ;
+            if (content.style.display === "none") {
+                content.style.display = "inline-block";
+            } 
+            else {
+
+                content.style.display = "none";
+            }
+        })
+    </script>
+</body>
+</html>
